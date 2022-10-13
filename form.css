@@ -1,0 +1,95 @@
+    * {
+    box-sizing: border-box;
+}
+body{
+    width: 50%;
+    margin: auto;
+}
+input[type=text], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #b4dbff;
+    color: rgb(47, 47, 47);
+    border-radius: 4 px;
+    resize: vertical;
+}
+
+input[type=email], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #b4dbff;
+    color: rgb(47, 47, 47);
+    border-radius: 4 px;
+    resize: vertical;
+}
+
+input[type=password], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: #b4dbff;
+    color: rgb(47, 47, 47);
+    border-radius: 4 px;
+    resize: vertical;
+}
+textarea[name=address], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #b4dbff;
+    color: rgb(47, 47, 47);
+    border-radius: 4 px;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #0782f4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover{
+    background-color: #ccc;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit]{
+        width: 50%;
+        margin-top: 0;
+    }
+}
